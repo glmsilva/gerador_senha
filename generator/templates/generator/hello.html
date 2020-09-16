@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+<div class="container text-center">
+
+    <h1>Gerador de Senhas</h1>
+    <form action= "password">
+        <div class="form-group">
+            <br>
+        <select name="tamanho">
+            <option value="6">6</option>
+            <option value="8" selected="selected">8</option>
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+        </select> Tamanho
+        <br>
+        <input type="checkbox" class="form-check-label" name="maiusculo"> Maiusculo
+        <br>
+        <input type="checkbox" class="form-check-label" name="numeros"> Números
+        <br>
+        <input type="checkbox" class="form-check-label" name="special"> Caracteres Especiais
+        <br>
+        <br>
+        
+        <input type="submit" class="btn btn-primary" value = "Gerar Senha">
+    
+    
+        </div>
+        
+    </form>
+    
+    <a href="{% url 'sobre'%}">Sobre</a>
+    
+</div>
+
+
+</body>
+</html>
